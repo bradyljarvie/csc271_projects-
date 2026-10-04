@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!--
+Name: Brady Jarvie
+Date: October 4, 2026
+Description: Campaigns page for Party Ledger.
+-->
+
+<html>
+
+<head>
+    <title>Party Ledger - Campaigns</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <h1>Party Ledger</h1>
+
+    <img src="images/Jarvie_Logo (1).png"
+         alt="Party Ledger logo">
+
+    <br>
+
+    <a href="cover_page.html">Home</a>
+
+
+    <!-- Campaigns -->
+    <h1>Campaigns</h1>
+
+    <p>
+        Find and explore Dungeons and Dragons campaigns with Party Ledger.
+    </p>
+
+
+    <!-- Featured Campaigns -->
+    <h2>Featured Campaigns</h2>
+
+    <p>
+        Check out campaigns created and shared by other players.
+    </p>
+
+    <img src="images/dnd_campaign.jpg"
+         alt="A Dungeons and Dragons campaign">
+
+
+    <!-- Search Campaigns -->
+    <h2>Search for Campaigns</h2>
+
+    <p>
+        Search for a campaign that fits your interests and play style.
+    </p>
+
+    <img src="images/dnd_party.jpg"
+         alt="A group of Dungeons and Dragons adventurers">
+
+
+    <!-- Trending Campaigns -->
+    <h2>Trending Campaigns</h2>
+
+    <p>
+        Discover campaigns that are currently popular with players.
+    </p>
+
+
+    <!-- Campaign Table -->
+    <h2>Campaign List</h2>
+
+    <table>
+
+        <tr>
+            <th>Campaign</th>
+            <th>Dungeon Master</th>
+            <th>Players</th>
+        </tr>
+
+        <tr>
+            <td>Dragon's Keep</td>
+            <td>Alex</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>Lost Kingdom</td>
+            <td>Sam</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>Dark Woods</td>
+            <td>Chris</td>
+            <td>6</td>
+        </tr>
+
+    </table>
+
+
+    <!-- Campaign Form -->
+    <h2>Find a Campaign</h2>
+
+    <form action="campaigns.html" method="get">
+
+        <label for="name">Your Name:</label>
+
+        <input type="text"
+               id="name"
+               name="name"
+               required>
+
+        <br><br>
+
+        <label for="campaign">Campaign Name:</label>
+
+        <input type="text"
+               id="campaign"
+               name="campaign">
+
+        <br><br>
+
+        <p>Experience Level:</p>
+
+        <input type="radio"
+               id="beginner"
+               name="experience"
+               value="beginner">
+
+        <label for="beginner">Beginner</label>
+
+        <input type="radio"
+               id="experienced"
+               name="experience"
+               value="experienced">
+
+        <label for="experienced">Experienced</label>
+
+        <br><br>
+
+        <input type="checkbox"
+               id="dm"
+               name="dm"
+               value="dm">
+
+        <label for="dm">
+            I am interested in being a Dungeon Master
+        </label>
+
+        <br><br>
+
+        <input type="submit"
+               value="Search">
+
+    </form>
+
+
+    <!-- Video -->
+    <h2>Learn More About Dungeons and Dragons</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VJ8rLs3yuZU?si=x-_zwj7Kf679xVC_"
+        title="Dungeons and Dragons Video"
+        allowfullscreen>
+    </iframe>
+
+    <br><br>
+
+
+    <!-- Footer -->
+    <a href="cover_page.html">Back to Home</a>
+
+    <p>Party Ledger</p>
+
+</body>
+
+</html>
