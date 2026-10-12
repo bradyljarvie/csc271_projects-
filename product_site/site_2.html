@@ -1,165 +1,169 @@
-<!DOCTYPE html>
 
-<!--
-Name: Brady Jarvie
-Date: October 4, 2026
-Description: Campaigns page for Party Ledger.
--->
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Party Ledger - Campaigns</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <h1>Party Ledger</h1>
+    <h1 id="title">Party Ledger</h1>
 
-    <img src="images/Jarvie_Logo.png"
+    <img src="images/Jarvie_Logo (1).png"
          alt="Party Ledger logo"
          width="100"
          height="100">
 
-    <br>
+    <p class="navigation">
+        <a href="cover_page.html">Home</a> |
+        <a href="campaigns.html">Campaigns</a> |
+        <a href="notes.html">Notes</a>
+    </p>
 
-    <a href="cover_page.html">Home</a>
+    <hr>
 
-
-    <!-- Campaigns -->
     <h1>Campaigns</h1>
 
     <p>
-        Find and explore Dungeons and Dragons campaigns with Party Ledger.
+        Find and explore Dungeons and Dragons campaigns
+        with Party Ledger.
     </p>
 
+    <div class="section">
 
-    <!-- Featured Campaigns -->
-    <h2>Featured Campaigns</h2>
+        <h2>Featured Campaigns</h2>
 
-    <p>
-        Check out campaigns created and shared by other players.
-    </p>
+        <p>
+            Check out campaigns created and shared
+            by other players.
+        </p>
 
-    <img src="images/dnd_campaign.jpg"
-         alt="A Dungeons and Dragons campaign"
-         width="600"
-         height="450">
+        <img src="images/dnd_campaign.jpg"
+             alt="A Dungeons and Dragons campaign"
+             width="600"
+             height="450">
 
+    </div>
 
-    <!-- Search Campaigns -->
-    <h2>Search for Campaigns</h2>
+    <div class="section">
 
-    <p>
-        Search for a campaign that fits your interests and play style.
-    </p>
+        <h2>Search for Campaigns</h2>
 
-    <img src="images/dnd_party.jpg"
-         alt="A group of Dungeons and Dragons adventurers"
-         width="600"
-         height="450">
+        <p>
+            Search for a campaign that fits your
+            interests and play style.
+        </p>
 
+        <img src="images/dnd_party.jpg"
+             alt="A group of Dungeons and Dragons adventurers"
+             width="600"
+             height="450">
 
-    <!-- Trending Campaigns -->
+    </div>
+
     <h2>Trending Campaigns</h2>
 
     <p>
-        Discover campaigns that are currently popular with players.
+        Discover campaigns that are currently
+        popular with players.
     </p>
 
+    <div class="section">
 
-    <!-- Campaign Table -->
-    <h2>Campaign List</h2>
+        <h2>Campaign List</h2>
 
-    <table>
+        <table>
 
-        <tr>
-            <th>Campaign</th>
-            <th>Dungeon Master</th>
-            <th>Players</th>
-        </tr>
+            <tr>
+                <th>Campaign</th>
+                <th>Dungeon Master</th>
+                <th>Players</th>
+            </tr>
 
-        <tr>
-            <td>Dragon's Keep</td>
-            <td>Alex</td>
-            <td>5</td>
-        </tr>
+            <tr>
+                <td>Dragon's Keep</td>
+                <td>Alex</td>
+                <td>5</td>
+            </tr>
 
-        <tr>
-            <td>Lost Kingdom</td>
-            <td>Sam</td>
-            <td>4</td>
-        </tr>
+            <tr>
+                <td>Lost Kingdom</td>
+                <td>Sam</td>
+                <td>4</td>
+            </tr>
 
-        <tr>
-            <td>Dark Woods</td>
-            <td>Chris</td>
-            <td>6</td>
-        </tr>
+            <tr>
+                <td>Dark Woods</td>
+                <td>Chris</td>
+                <td>6</td>
+            </tr>
 
-    </table>
+        </table>
 
+    </div>
 
-    <!-- Campaign Form -->
-    <h2>Find a Campaign</h2>
+    <div class="section">
 
-    <form action="campaigns.html" method="get">
+        <h2>Find a Campaign</h2>
 
-        <label for="name">Your Name:</label>
+        <form action="campaigns.html" method="get">
 
-        <input type="text"
-               id="name"
-               name="name"
-               required>
+            <label for="name">Your Name:</label>
 
-        <br><br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
 
-        <label for="campaign">Campaign Name:</label>
+            <br><br>
 
-        <input type="text"
-               id="campaign"
-               name="campaign">
+            <label for="campaign">Campaign Name:</label>
 
-        <br><br>
+            <input type="text"
+                   id="campaign"
+                   name="campaign">
 
-        <p>Experience Level:</p>
+            <br><br>
 
-        <input type="radio"
-               id="beginner"
-               name="experience"
-               value="beginner">
+            <p>Experience Level:</p>
 
-        <label for="beginner">Beginner</label>
+            <input type="radio"
+                   id="beginner"
+                   name="experience"
+                   value="beginner">
 
-        <input type="radio"
-               id="experienced"
-               name="experience"
-               value="experienced">
+            <label for="beginner">Beginner</label>
 
-        <label for="experienced">Experienced</label>
+            <input type="radio"
+                   id="experienced"
+                   name="experience"
+                   value="experienced">
 
-        <br><br>
+            <label for="experienced">Experienced</label>
 
-        <input type="checkbox"
-               id="dm"
-               name="dm"
-               value="dm">
+            <br><br>
 
-        <label for="dm">
-            I am interested in being a Dungeon Master
-        </label>
+            <input type="checkbox"
+                   id="dm"
+                   name="dm"
+                   value="dm">
 
-        <br><br>
+            <label for="dm">
+                I am interested in being a Dungeon Master
+            </label>
 
-        <input type="submit"
-               value="Search">
+            <br><br>
 
-    </form>
+            <input type="submit" value="Search">
 
+        </form>
 
-    <!-- Video -->
+    </div>
+
     <h2>Learn More About Dungeons and Dragons</h2>
 
     <iframe
@@ -172,8 +176,8 @@ Description: Campaigns page for Party Ledger.
 
     <br><br>
 
+    <hr>
 
-    <!-- Footer -->
     <a href="cover_page.html">Back to Home</a>
 
     <p>Party Ledger</p>
