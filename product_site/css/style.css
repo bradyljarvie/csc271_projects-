@@ -1,46 +1,76 @@
+/* Brady Jarvie - October 18, 2026
+   Party Ledger website layout and responsive styling. */
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #101116;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 30px;
+    margin: 0;
 }
 
-h1 {
+h1, h2 {
     color: #d4a64c;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 32px;
 }
 
-h2 {
-    color: #d4a64c;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
-}
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { color: white; font-size: 20px; }
+p { color: #b9bdd0; font-size: 16px; line-height: 1.5; }
+ul { color: #b9bdd0; }
 
-h3 {
-    color: white;
-    font-size: 20px;
-}
-
-p {
-    color: #b9bdd0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-#title {
-    color: #d4a64c;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 36px;
-}
-
-.navigation {
+/* Header and navigation */
+.header {
+    overflow: hidden;
     background-color: #202231;
-    padding: 15px;
+    padding: 15px 5%;
+    border-bottom: 2px solid #d4a64c;
+}
+
+.logo {
+    float: left;
+    width: 75px;
+    height: auto;
+    max-width: 100%;
+    margin-right: 15px;
+}
+
+.site-title {
+    float: left;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.navigation { float: right; margin-top: 14px; }
+.navigation a {
+    float: left;
+    display: block;
+    color: #e0b65e;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 16px;
+}
+.navigation a:hover { color: white; background-color: #665025; }
+.navigation a:active { color: white; background-color: #8a6b30; }
+.navigation a.active { color: #101116; background-color: #d4a64c; }
+
+/* Main content */
+.content {
+    float: left;
+    width: 90%;
+    max-width: 1100px;
+    background-color: #171922;
+    padding: 25px;
+    margin: 30px max(5%, calc((100% - 1100px) / 2));
 }
 
 .section {
+    overflow: auto;
     background-color: #202231;
     padding: 20px;
     margin-top: 15px;
@@ -48,47 +78,41 @@ p {
     border: 1px solid #353545;
 }
 
-a:link {
-    color: #e0b65e;
+/* Images and embedded video */
+.content-image {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 20px 15px 0;
 }
 
-a:visited {
-    color: #b79ad8;
-}
+iframe { max-width: 100%; }
 
-a:hover {
-    color: white;
-    background-color: #665025;
-}
+/* Links, tables and forms */
+a:link { color: #e0b65e; }
+a:visited { color: #b79ad8; }
+a:hover { color: white; }
+.navigation a:visited { color: #e0b65e; }
+.navigation a.active:visited { color: #101116; }
 
-ul {
-    color: #b9bdd0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+table { border: 1px solid #d4a64c; border-collapse: collapse; width: 100%; }
+th { background-color: #353044; color: #d4a64c; border: 1px solid #555568; padding: 10px; }
+td { border: 1px solid #555568; padding: 10px; }
+form { color: white; }
+input { max-width: 100%; }
+hr { border: 1px solid #353545; }
 
-table {
-    border: 1px solid #d4a64c;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th {
-    background-color: #353044;
-    color: #d4a64c;
-    border: 1px solid #555568;
-    padding: 10px;
-}
-
-td {
-    border: 1px solid #555568;
-    padding: 10px;
-}
-
-form {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-hr {
-    border: 1px solid #353545;
+/* Responsive layout for phones */
+@media screen and (max-width: 600px) {
+    .header { padding: 12px; }
+    .logo { width: 60px; }
+    .site-title { font-size: 26px; }
+    .navigation { float: none; clear: both; margin-top: 10px; }
+    .navigation a { float: none; display: block; text-align: left; }
+    .content { float: none; width: 100%; max-width: 100%; margin: 0; padding: 15px; font-size: 18px; }
+    .content p, .content li { font-size: 18px; }
+    .content-image { float: none; display: block; max-width: 100%; height: auto; margin: 10px 0 15px; }
+    table { font-size: 14px; }
+    th, td { padding: 5px; }
 }
