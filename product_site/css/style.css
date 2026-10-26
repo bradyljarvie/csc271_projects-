@@ -116,9 +116,3 @@ hr { border: 1px solid #353545; }
     table { font-size: 14px; }
     th, td { padding: 5px; }
 }
-
-/* Keyboard accessibility and small-screen readability */
-a:focus-visible, input:focus-visible { outline: 3px solid #f6d67d; outline-offset: 3px; }
-input[type="text"] { padding: 8px; }
-input[type="submit"] { padding: 9px 16px; cursor: pointer; }
-@media screen and (max-width: 600px) { .content { width: 94%; margin: 15px 3%; padding: 15px; } .navigation { float: none; clear: both; } .navigation a { float: none; display: inline-block; padding: 10px; } }
