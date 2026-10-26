@@ -1,0 +1,10 @@
+Party Ledger — SEO Keyword Plan
+
+Home (cover_page.html): D&D campaign organizer; D&D campaign dashboard; Dungeons & Dragons campaign tracker; party notes; quest organizer.
+Campaigns (campaigns.html): D&D campaigns; Dungeons & Dragons adventures; campaign list; D&D party; fantasy campaign.
+Notes (notes.html): D&D campaign notes; quest tracker; session notes; NPC notes; Dungeons & Dragons notes.
+Legacy campaigns page (site_2.html): D&D campaigns; Dungeons & Dragons adventures; campaign list.
+
+These are relevance-based keyword suggestions, not verified search-volume or Google competition data. Validate competition and search volume with a keyword tool before claiming that part is complete.
+
+Before publishing: add og:url with the actual live page URL to each page, and replace og:image with an absolute live URL. Add the actual Google Analytics tracking snippet to every page head.
