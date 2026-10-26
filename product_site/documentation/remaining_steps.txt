@@ -1,0 +1,10 @@
+MIDTERM — STEPS THAT REQUIRE YOUR ACCOUNT
+
+1. Create and switch to a local branch named product_site_v5 BEFORE copying in the updated website files. Do not push it until you are ready to merge.
+2. Google Analytics: create a GA4 web data stream for your actual live site and insert the Google-provided tracking code before </head> in all four HTML pages. Confirm an active user in Realtime after publishing.
+3. SEO: use a keyword research tool to verify keyword volume and competition; add og:url and absolute og:image URLs when the live site address is known.
+4. Test all links, images, keyboard navigation, mobile layout and the sample form on the published site.
+5. Push product_site_v5, merge into main, and push main, following course instructions. Pull latest repo in URI cPanel and check the live site.
+6. Submit main GitHub URL, product_site_v5 branch URL, and the live cPanel website URL in Brightspace.
+
+This package does not establish that GA4 is connected, that keyword competition was measured, or that the site is published.
