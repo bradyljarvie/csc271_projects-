@@ -8,10 +8,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/></head>
 <body><div class="header"><img alt="Party Ledger logo" class="logo" src="images/Jarvie_Logo(1).png"/><h1 class="site-title">Party Ledger</h1><div class="navigation"><a href="cover_page.html">Home</a><a class="active" href="campaigns.html">Campaigns</a><a href="notes.html">Notes</a></div></div><div class="content">
-
-
-
-
 <h1>Campaigns</h1>
 <p>
         Find and explore Dungeons and Dragons campaigns
@@ -32,7 +28,7 @@
             interests and play style.
         </p>
 <img alt="A group of Dungeons and Dragons adventurers" class="content-image" src="images/dnd_party.jpg"/>
-</div>
+<div class="campaign-search"><label for="campaignSearch">Search by campaign name:</label> <input id="campaignSearch" placeholder="Enter a campaign name" type="text"/> <p id="searchResults"></p> <p id="searchMessage"></p></div></div>
 <h2>Trending Campaigns</h2>
 <p>
         Discover campaigns that are currently
@@ -40,23 +36,23 @@
     </p>
 <div class="section">
 <h2>Campaign List</h2>
-<table>
+<table id="campaignTable">
 <tr>
 <th>Campaign</th>
 <th>Dungeon Master</th>
 <th>Players</th>
 </tr>
-<tr>
+<tr class="campaign-row">
 <td>Dragon's Keep</td>
 <td>Alex</td>
 <td>5</td>
 </tr>
-<tr>
+<tr class="campaign-row">
 <td>Lost Kingdom</td>
 <td>Sam</td>
 <td>4</td>
 </tr>
-<tr>
+<tr class="campaign-row">
 <td>Dark Woods</td>
 <td>Chris</td>
 <td>6</td>
@@ -91,7 +87,6 @@
 </iframe>
 <br/><br/>
 <hr/>
-
 <p>Party Ledger</p>
-</div></body>
+</div><script src="js/campaign-search.js"></script></body>
 </html>

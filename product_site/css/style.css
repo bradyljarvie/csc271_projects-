@@ -116,3 +116,7 @@ hr { border: 1px solid #353545; }
     table { font-size: 14px; }
     th, td { padding: 5px; }
 }
+
+.campaign-search { margin-top: 15px; }
+.campaign-search label { display: block; margin-bottom: 8px; }
+.campaign-search input { padding: 9px; width: 100%; max-width: 350px; background-color: #171922; border: 1px solid #d4a64c; color: white; }
