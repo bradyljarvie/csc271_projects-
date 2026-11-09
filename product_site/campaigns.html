@@ -42,17 +42,17 @@
 <th>Dungeon Master</th>
 <th>Players</th>
 </tr>
-<tr class="campaign-row">
+<tr class="campaign-row" data-campaign="true">
 <td>Dragon's Keep</td>
 <td>Alex</td>
 <td>5</td>
 </tr>
-<tr class="campaign-row">
+<tr class="campaign-row" data-campaign="true">
 <td>Lost Kingdom</td>
 <td>Sam</td>
 <td>4</td>
 </tr>
-<tr class="campaign-row">
+<tr class="campaign-row" data-campaign="true">
 <td>Dark Woods</td>
 <td>Chris</td>
 <td>6</td>
@@ -61,7 +61,7 @@
 </div>
 <div class="section">
 <h2>Find a Campaign</h2>
-<form action="campaigns.html" method="get">
+<form action="#" id="recommendationForm" method="get">
 <label for="name">Your Name:</label>
 <input id="name" name="name" required="" type="text"/>
 <br/><br/>
@@ -79,8 +79,8 @@
                 I am interested in being a Dungeon Master
             </label>
 <br/><br/>
-<input type="submit" value="Search"/>
-</form>
+<input type="submit" value="Find My Campaign"/>
+</form><p aria-live="polite" id="recommendationResult"></p><div class="section"><h2>Campaign Recommendations</h2><p>Here are a few campaign styles you can explore:</p><ul id="recommendationList"></ul><p id="recommendationCount"></p></div>
 </div>
 <h2>Learn More About Dungeons and Dragons</h2>
 <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/VJ8rLs3yuZU?si=x-_zwj7Kf679xVC_" title="Dungeons and Dragons Video" width="560">
@@ -88,5 +88,5 @@
 <br/><br/>
 <hr/>
 <p>Party Ledger</p>
-</div><script src="js/campaign-search.js"></script></body>
+</div><script src="js/campaign-search.js"></script><script src="js/decisions-loops.js"></script></body>
 </html>
