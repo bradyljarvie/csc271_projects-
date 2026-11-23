@@ -1,7 +1,4 @@
-/* Brady Jarvie - October 18, 2026
-   Party Ledger website layout and responsive styling. */
 
-/* General page styling */
 * {
     box-sizing: border-box;
 }
@@ -24,7 +21,6 @@ h3 { color: white; font-size: 20px; }
 p { color: #b9bdd0; font-size: 16px; line-height: 1.5; }
 ul { color: #b9bdd0; }
 
-/* Header and navigation */
 .header {
     overflow: hidden;
     background-color: #202231;
@@ -59,7 +55,6 @@ ul { color: #b9bdd0; }
 .navigation a:active { color: white; background-color: #8a6b30; }
 .navigation a.active { color: #101116; background-color: #d4a64c; }
 
-/* Main content */
 .content {
     float: left;
     width: 90%;
@@ -78,7 +73,6 @@ ul { color: #b9bdd0; }
     border: 1px solid #353545;
 }
 
-/* Images and embedded video */
 .content-image {
     float: left;
     width: auto;
@@ -89,7 +83,6 @@ ul { color: #b9bdd0; }
 
 iframe { max-width: 100%; }
 
-/* Links, tables and forms */
 a:link { color: #e0b65e; }
 a:visited { color: #b79ad8; }
 a:hover { color: white; }
@@ -103,7 +96,6 @@ form { color: white; }
 input { max-width: 100%; }
 hr { border: 1px solid #353545; }
 
-/* Responsive layout for phones */
 @media screen and (max-width: 600px) {
     .header { padding: 12px; }
     .logo { width: 60px; }
@@ -120,3 +112,6 @@ hr { border: 1px solid #353545; }
 .campaign-search { margin-top: 15px; }
 .campaign-search label { display: block; margin-bottom: 8px; }
 .campaign-search input { padding: 9px; width: 100%; max-width: 350px; background-color: #171922; border: 1px solid #d4a64c; color: white; }
+
+.field-feedback { margin: 4px 0 8px; font-size: 0.9em; }
+#toggleRecommendations { padding: 9px 14px; margin: 8px 0; cursor: pointer; }

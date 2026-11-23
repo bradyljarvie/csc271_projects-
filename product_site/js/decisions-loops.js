@@ -48,6 +48,10 @@ function displayRecommendation(name, recommendation) {
 function handleRecommendation(event) {
     event.preventDefault();
     var name = document.getElementById("name").value.trim();
+    var campaignText = document.getElementById("campaign").value.trim();
+    if (name.length < 2 || campaignText.length === 1) {
+        return;
+    }
     var campaignName = document.getElementById("campaign").value.trim();
     var beginner = document.getElementById("beginner").checked;
     var experienced = document.getElementById("experienced").checked;

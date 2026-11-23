@@ -63,9 +63,11 @@
 <h2>Find a Campaign</h2>
 <form action="#" id="recommendationForm" method="get">
 <label for="name">Your Name:</label>
+<p class="field-feedback" id="nameFeedback" aria-live="polite"></p>
 <input id="name" name="name" required="" type="text"/>
 <br/><br/>
 <label for="campaign">Campaign Name:</label>
+<p class="field-feedback" id="campaignFeedback" aria-live="polite"></p>
 <input id="campaign" name="campaign" type="text"/>
 <br/><br/>
 <p>Experience Level:</p>
@@ -80,7 +82,7 @@
             </label>
 <br/><br/>
 <input type="submit" value="Find My Campaign"/>
-</form><p aria-live="polite" id="recommendationResult"></p><div class="section"><h2>Campaign Recommendations</h2><p>Here are a few campaign styles you can explore:</p><ul id="recommendationList"></ul><p id="recommendationCount"></p></div>
+</form><p aria-live="polite" id="recommendationResult"></p><div class="section"><h2>Campaign Recommendations</h2><button type="button" id="toggleRecommendations">Hide Campaign Styles</button><div id="campaignStyles"><p>Here are a few campaign styles you can explore:</p><ul id="recommendationList"></ul><p id="recommendationCount"></p></div></div>
 </div>
 <h2>Learn More About Dungeons and Dragons</h2>
 <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/VJ8rLs3yuZU?si=x-_zwj7Kf679xVC_" title="Dungeons and Dragons Video" width="560">
@@ -88,5 +90,5 @@
 <br/><br/>
 <hr/>
 <p>Party Ledger</p>
-</div><script src="js/campaign-search.js"></script><script src="js/decisions-loops.js"></script></body>
+</div><script src="js/campaign-search.js"></script><script src="js/decisions-loops.js"></script><script src="js/events.js"></script></body>
 </html>
